@@ -1,24 +1,35 @@
-# README
+Cookpad Web & Rails
+--
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+[here](https://speakerdeck.com/moro/about-rails-at-cookpad-summer-intern-2016-day1)
 
-Things you may want to cover:
+Summary
+--
 
-* Ruby version
+I can learn following technical points from the slide:
 
-* System dependencies
+- 簡単なRailsアプリケーションの作る
+- その仮定でWebアプリに必要な諸概念に触れる
+  - REST
+  - RDBMS設計
+  - JSON API化
+  - （ATDD）
 
-* Configuration
+But I can NOT learn:
 
-* Database creation
+- 非同期処理、バッチ処理
+- JavaScriptの詳細
+- CSSの詳細
+- RDMBS以外のデータストア
+- Webアプリを動かすインフラ（クラウド、スケールアウト、コンテナ化）
+- herokuの詳細
 
-* Database initialization
+Theme
+--
 
-* How to run the test suite
+ECサイトをつくろう
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- 商品一覧を表示できる
+- おすすめ商品の一覧を表示できる
+- カテゴリ分けされた商品一覧を表示できる
+- 商品を注文できる
