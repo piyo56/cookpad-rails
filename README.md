@@ -6,9 +6,9 @@ Cookpad Web & Rails
 Summary
 --
 
-I can learn following technical points from the slide:
+I can learn following technical points:
 
-- 簡単なRailsアプリケーションの作る
+- 簡単なRailsアプリケーションを作る
 - その仮定でWebアプリに必要な諸概念に触れる
   - REST
   - RDBMS設計
@@ -28,6 +28,8 @@ Theme
 --
 
 ECサイトをつくろう
+
+#### Tasks
 
 - 商品一覧を表示できる
 - おすすめ商品の一覧を表示できる
