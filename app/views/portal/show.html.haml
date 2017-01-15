@@ -1,0 +1,8 @@
+%h1 My EC web service!!
+
+%ul.items
+  - @categories.each do |category|
+    %li.category 
+      %h2= category.name
+      %p
+        %img{:src => category.image_url, :height => "200"}
