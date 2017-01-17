@@ -462,3 +462,420 @@ Completed 200 OK in 178ms (Views: 176.7ms | ActiveRecord: 0.3ms)
   Rendering items/show.html.haml
   Rendered items/show.html.haml (3.3ms)
   [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (24.8ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (11.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (24.2ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "包丁"], ["description", "素敵な包丁です。"], ["price", 1000], ["image_url", "http://example.com/images/item/.png"], ["created_at", 2017-01-17 10:30:01 UTC], ["updated_at", 2017-01-17 10:30:01 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "フライパン"], ["description", "素敵なフライパンです。"], ["price", 1000], ["image_url", "http://example.com/images/item/.png"], ["created_at", 2017-01-17 10:30:01 UTC], ["updated_at", 2017-01-17 10:30:01 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/items" for 127.0.0.1 at 2017-01-17 19:30:01 +0900
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.haml within layouts/application
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  Rendered items/index.html.haml within layouts/application (26.2ms)
+Completed 200 OK in 493ms (Views: 487.9ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "MyString"], ["description", "MyString"], ["price", 1], ["image_url", "MyString"], ["created_at", 2017-01-17 10:30:02 UTC], ["updated_at", 2017-01-17 10:30:02 UTC]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Name"], ["description", "Description"], ["price", 2], ["image_url", "Image Url"], ["created_at", 2017-01-17 10:30:02 UTC], ["updated_at", 2017-01-17 10:30:02 UTC]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Name"], ["description", "Description"], ["price", 2], ["image_url", "Image Url"], ["created_at", 2017-01-17 10:30:02 UTC], ["updated_at", 2017-01-17 10:30:02 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering items/index.html.haml
+  Rendered items/index.html.haml (8.1ms)
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Name"], ["description", "Description"], ["price", 2], ["image_url", "Image Url"], ["created_at", 2017-01-17 10:30:02 UTC], ["updated_at", 2017-01-17 10:30:02 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering items/show.html.haml
+  Rendered items/show.html.haml (8.3ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "包丁"], ["description", "素敵な包丁です。"], ["price", 1000], ["image_url", "http://example.com/images/item/.png"], ["created_at", 2017-01-17 10:31:16 UTC], ["updated_at", 2017-01-17 10:31:16 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "フライパン"], ["description", "素敵なフライパンです。"], ["price", 1000], ["image_url", "http://example.com/images/item/.png"], ["created_at", 2017-01-17 10:31:16 UTC], ["updated_at", 2017-01-17 10:31:16 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/items" for 127.0.0.1 at 2017-01-17 19:31:16 +0900
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.haml within layouts/application
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  Rendered items/index.html.haml within layouts/application (39.2ms)
+Completed 200 OK in 517ms (Views: 509.4ms | ActiveRecord: 0.5ms)
+  [1m[35m (0.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "MyString"], ["description", "MyString"], ["price", 1], ["image_url", "MyString"], ["created_at", 2017-01-17 10:31:17 UTC], ["updated_at", 2017-01-17 10:31:17 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Name"], ["description", "Description"], ["price", 2], ["image_url", "Image Url"], ["created_at", 2017-01-17 10:31:17 UTC], ["updated_at", 2017-01-17 10:31:17 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Name"], ["description", "Description"], ["price", 2], ["image_url", "Image Url"], ["created_at", 2017-01-17 10:31:17 UTC], ["updated_at", 2017-01-17 10:31:17 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering items/index.html.haml
+  Rendered items/index.html.haml (7.0ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (2.8ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Name"], ["description", "Description"], ["price", 2], ["image_url", "Image Url"], ["created_at", 2017-01-17 10:31:17 UTC], ["updated_at", 2017-01-17 10:31:17 UTC]]
+  [1m[35m (0.8ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering items/show.html.haml
+  Rendered items/show.html.haml (11.0ms)
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "包丁"], ["description", "素敵な包丁です。"], ["price", 1000], ["image_url", "http://example.com/images/item/.png"], ["created_at", 2017-01-17 10:31:42 UTC], ["updated_at", 2017-01-17 10:31:42 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "フライパン"], ["description", "素敵なフライパンです。"], ["price", 1000], ["image_url", "http://example.com/images/item/.png"], ["created_at", 2017-01-17 10:31:42 UTC], ["updated_at", 2017-01-17 10:31:42 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "包丁"], ["description", "素敵な包丁です。"], ["price", 1000], ["image_url", "http://example.com/images/item/.png"], ["created_at", 2017-01-17 10:32:20 UTC], ["updated_at", 2017-01-17 10:32:20 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "フライパン"], ["description", "素敵なフライパンです。"], ["price", 1000], ["image_url", "http://example.com/images/item/.png"], ["created_at", 2017-01-17 10:32:20 UTC], ["updated_at", 2017-01-17 10:32:20 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (2.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (3.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (15.4ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "包丁"], ["description", "素敵な包丁です。"], ["price", 1000], ["image_url", "http://example.com/images/item/.png"], ["created_at", 2017-01-17 10:36:13 UTC], ["updated_at", 2017-01-17 10:36:13 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "フライパン"], ["description", "素敵なフライパンです。"], ["price", 1000], ["image_url", "http://example.com/images/item/.png"], ["created_at", 2017-01-17 10:36:13 UTC], ["updated_at", 2017-01-17 10:36:13 UTC]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/items" for 127.0.0.1 at 2017-01-17 19:36:13 +0900
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.haml within layouts/application
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  Rendered items/index.html.haml within layouts/application (9.4ms)
+Completed 200 OK in 242ms (Views: 239.6ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/items" for 127.0.0.1 at 2017-01-17 19:36:13 +0900
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.haml within layouts/application
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  Rendered items/index.html.haml within layouts/application (3.0ms)
+Completed 200 OK in 12ms (Views: 10.0ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "MyString"], ["description", "MyString"], ["price", 1], ["image_url", "MyString"], ["created_at", 2017-01-17 10:36:13 UTC], ["updated_at", 2017-01-17 10:36:13 UTC]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Name"], ["description", "Description"], ["price", 2], ["image_url", "Image Url"], ["created_at", 2017-01-17 10:36:14 UTC], ["updated_at", 2017-01-17 10:36:14 UTC]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Name"], ["description", "Description"], ["price", 2], ["image_url", "Image Url"], ["created_at", 2017-01-17 10:36:14 UTC], ["updated_at", 2017-01-17 10:36:14 UTC]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering items/index.html.haml
+  Rendered items/index.html.haml (3.7ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Name"], ["description", "Description"], ["price", 2], ["image_url", "Image Url"], ["created_at", 2017-01-17 10:36:14 UTC], ["updated_at", 2017-01-17 10:36:14 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering items/show.html.haml
+  Rendered items/show.html.haml (6.1ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "包丁"], ["description", "素敵な包丁です。"], ["price", 1000], ["image_url", "http://example.com/images/item/.png"], ["created_at", 2017-01-17 10:36:23 UTC], ["updated_at", 2017-01-17 10:36:23 UTC]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "フライパン"], ["description", "素敵なフライパンです。"], ["price", 1000], ["image_url", "http://example.com/images/item/.png"], ["created_at", 2017-01-17 10:36:23 UTC], ["updated_at", 2017-01-17 10:36:23 UTC]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/items" for 127.0.0.1 at 2017-01-17 19:36:23 +0900
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.haml within layouts/application
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  Rendered items/index.html.haml within layouts/application (9.4ms)
+Completed 200 OK in 241ms (Views: 237.4ms | ActiveRecord: 0.5ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[35m (146.8ms)[0m  [1m[35mDROP DATABASE IF EXISTS "cookpad-ec_test"[0m
+  [1m[35m (527.3ms)[0m  [1m[35mCREATE DATABASE "cookpad-ec_test" ENCODING = 'unicode'[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (7.0ms)[0m  [1m[35mCREATE TABLE "items" ("id" serial primary key, "name" character varying, "description" character varying, "price" integer, "image_url" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "recommended" boolean DEFAULT 'f' NOT NULL)[0m
+  [1m[35m (2.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying PRIMARY KEY)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES ('20170117103746')[0m
+  [1m[35m (0.5ms)[0m  [1m[32mINSERT INTO schema_migrations (version) VALUES
+('20170101065315');
+
+[0m
+  [1m[35m (2.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "test"], ["created_at", 2017-01-17 10:38:38 UTC], ["updated_at", 2017-01-17 10:38:38 UTC]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "包丁"], ["description", "素敵な包丁です。"], ["price", 1000], ["image_url", "http://example.com/images/item/.png"], ["created_at", 2017-01-17 10:38:38 UTC], ["updated_at", 2017-01-17 10:38:38 UTC]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "フライパン"], ["description", "素敵なフライパンです。"], ["price", 1000], ["image_url", "http://example.com/images/item/.png"], ["created_at", 2017-01-17 10:38:39 UTC], ["updated_at", 2017-01-17 10:38:39 UTC]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/items" for 127.0.0.1 at 2017-01-17 19:38:39 +0900
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.haml within layouts/application
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  Rendered items/index.html.haml within layouts/application (10.1ms)
+Completed 200 OK in 264ms (Views: 260.8ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "price", "image_url", "created_at", "updated_at", "recommended") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "包丁"], ["description", "素敵な包丁です。"], ["price", 1000], ["image_url", "http://example.com/images/item/.png"], ["created_at", 2017-01-17 10:38:39 UTC], ["updated_at", 2017-01-17 10:38:39 UTC], ["recommended", true]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "フライパン"], ["description", "素敵なフライパンです。"], ["price", 1000], ["image_url", "http://example.com/images/item/.png"], ["created_at", 2017-01-17 10:38:39 UTC], ["updated_at", 2017-01-17 10:38:39 UTC]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "包丁"], ["description", "素敵な包丁です。"], ["price", 1000], ["image_url", "http://example.com/images/item/.png"], ["created_at", 2017-01-17 10:42:01 UTC], ["updated_at", 2017-01-17 10:42:01 UTC]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "フライパン"], ["description", "素敵なフライパンです。"], ["price", 1000], ["image_url", "http://example.com/images/item/.png"], ["created_at", 2017-01-17 10:42:01 UTC], ["updated_at", 2017-01-17 10:42:01 UTC]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/items" for 127.0.0.1 at 2017-01-17 19:42:01 +0900
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.haml within layouts/application
+  [1m[36mItem Load (0.7ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  Rendered items/index.html.haml within layouts/application (12.7ms)
+Completed 200 OK in 249ms (Views: 246.3ms | ActiveRecord: 0.7ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "price", "image_url", "created_at", "updated_at", "recommended") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "包丁"], ["description", "素敵な包丁です。"], ["price", 1000], ["image_url", "http://example.com/images/item/.png"], ["created_at", 2017-01-17 10:42:02 UTC], ["updated_at", 2017-01-17 10:42:02 UTC], ["recommended", true]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "フライパン"], ["description", "素敵なフライパンです。"], ["price", 1000], ["image_url", "http://example.com/images/item/.png"], ["created_at", 2017-01-17 10:42:02 UTC], ["updated_at", 2017-01-17 10:42:02 UTC]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "包丁"], ["description", "素敵な包丁です。"], ["price", 1000], ["image_url", "http://example.com/images/item/.png"], ["created_at", 2017-01-17 10:42:39 UTC], ["updated_at", 2017-01-17 10:42:39 UTC]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "フライパン"], ["description", "素敵なフライパンです。"], ["price", 1000], ["image_url", "http://example.com/images/item/.png"], ["created_at", 2017-01-17 10:42:39 UTC], ["updated_at", 2017-01-17 10:42:39 UTC]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/items" for 127.0.0.1 at 2017-01-17 19:42:39 +0900
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.haml within layouts/application
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  Rendered items/index.html.haml within layouts/application (9.3ms)
+Completed 200 OK in 239ms (Views: 235.8ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "price", "image_url", "created_at", "updated_at", "recommended") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "包丁"], ["description", "素敵な包丁です。"], ["price", 1000], ["image_url", "http://example.com/images/item/.png"], ["created_at", 2017-01-17 10:42:39 UTC], ["updated_at", 2017-01-17 10:42:39 UTC], ["recommended", true]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "フライパン"], ["description", "素敵なフライパンです。"], ["price", 1000], ["image_url", "http://example.com/images/item/.png"], ["created_at", 2017-01-17 10:42:39 UTC], ["updated_at", 2017-01-17 10:42:39 UTC]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/items/recommended" for 127.0.0.1 at 2017-01-17 19:42:39 +0900
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
